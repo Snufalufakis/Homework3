@@ -52,6 +52,6 @@ return randomPasswordGenerated;
 
 }
 // Password length  alert
-if (generatePassword.length <= 8 || generatePassword.length >= 128) {
+if (generatePassword.length < 8 || generatePassword.length > 128) {
   alert("Password length must be 8 and 128 characters");
 }
